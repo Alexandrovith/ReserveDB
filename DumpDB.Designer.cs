@@ -29,6 +29,7 @@
 		private void InitializeComponent ()
 		{
 			this.components = new System.ComponentModel.Container();
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDumpDB_SQL));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -39,7 +40,6 @@
 			this.TBPassw = new System.Windows.Forms.TextBox();
 			this.TBServer = new System.Windows.Forms.TextBox();
 			this.TBPatch = new System.Windows.Forms.TextBox();
-			this.BReserved = new System.Windows.Forms.Button();
 			this.label6 = new System.Windows.Forms.Label();
 			this.TBFileSQL = new System.Windows.Forms.TextBox();
 			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
@@ -50,6 +50,7 @@
 			this.PSetups = new System.Windows.Forms.Panel();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.BOpenFolder = new System.Windows.Forms.Button();
+			this.BReserved = new System.Windows.Forms.Button();
 			this.BClose = new System.Windows.Forms.Button();
 			this.PSetups.SuspendLayout();
 			this.panel1.SuspendLayout();
@@ -165,20 +166,6 @@
 			this.TBPatch.TabIndex = 9;
 			this.TBPatch.Text = "d:";
 			// 
-			// BReserved
-			// 
-			this.BReserved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.BReserved.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BReserved.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.BReserved.Location = new System.Drawing.Point(116, 127);
-			this.BReserved.Margin = new System.Windows.Forms.Padding(5);
-			this.BReserved.Name = "BReserved";
-			this.BReserved.Size = new System.Drawing.Size(224, 43);
-			this.BReserved.TabIndex = 0;
-			this.BReserved.Text = "Резервировать";
-			this.BReserved.UseVisualStyleBackColor = true;
-			this.BReserved.Click += new System.EventHandler(this.BReserved_Click);
-			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
@@ -282,6 +269,22 @@
 			this.BOpenFolder.UseVisualStyleBackColor = true;
 			this.BOpenFolder.Click += new System.EventHandler(this.BOpenFolder_Click);
 			// 
+			// BReserved
+			// 
+			this.BReserved.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+			this.BReserved.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BReserved.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.BReserved.Image = global::ReserveDB.Properties.Resources.DB_ok_p3;
+			this.BReserved.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.BReserved.Location = new System.Drawing.Point(116, 127);
+			this.BReserved.Margin = new System.Windows.Forms.Padding(5);
+			this.BReserved.Name = "BReserved";
+			this.BReserved.Size = new System.Drawing.Size(224, 43);
+			this.BReserved.TabIndex = 0;
+			this.BReserved.Text = "Резервировать";
+			this.BReserved.UseVisualStyleBackColor = true;
+			this.BReserved.Click += new System.EventHandler(this.BReserved_Click);
+			// 
 			// BClose
 			// 
 			this.BClose.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -307,6 +310,7 @@
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.BClose);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(5);
 			this.MinimumSize = new System.Drawing.Size(16, 344);
 			this.Name = "FDumpDB_SQL";

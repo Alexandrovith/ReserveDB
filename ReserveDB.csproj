@@ -112,6 +112,7 @@
   <ItemGroup>
     <Content Include="DB_ok.ico" />
     <Content Include="mysqldump.exe" />
+    <None Include="Resources\DB_ok_p3.png" />
     <None Include="Resources\Exit.png" />
     <None Include="Resources\ExitTranspar1.png" />
     <None Include="Resources\Gris&amp;GlowV1.5 Icon 19_p6.gif" />

@@ -63,6 +63,16 @@ namespace ReserveDB.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap DB_ok_p3 {
+            get {
+                object obj = ResourceManager.GetObject("DB_ok_p3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Desktop_p6 {
             get {
                 object obj = ResourceManager.GetObject("Desktop_p6", resourceCulture);

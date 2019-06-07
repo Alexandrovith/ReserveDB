@@ -99,12 +99,13 @@
 			// label5
 			// 
 			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(26, 10);
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label5.Location = new System.Drawing.Point(8, 20);
 			this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(46, 20);
+			this.label5.Size = new System.Drawing.Size(112, 18);
 			this.label5.TabIndex = 4;
-			this.label5.Text = "Путь";
+			this.label5.Text = "Расположение";
 			// 
 			// TBDB
 			// 
@@ -158,32 +159,33 @@
 			// 
 			this.TBPatch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.TBPatch.Location = new System.Drawing.Point(116, 3);
+			this.TBPatch.Location = new System.Drawing.Point(124, 16);
 			this.TBPatch.Margin = new System.Windows.Forms.Padding(5);
 			this.TBPatch.Name = "TBPatch";
 			this.TBPatch.ReadOnly = true;
-			this.TBPatch.Size = new System.Drawing.Size(180, 26);
+			this.TBPatch.Size = new System.Drawing.Size(176, 26);
 			this.TBPatch.TabIndex = 9;
 			this.TBPatch.Text = "d:";
 			// 
 			// label6
 			// 
 			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(26, 47);
+			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label6.Location = new System.Drawing.Point(8, 60);
 			this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(80, 20);
+			this.label6.Size = new System.Drawing.Size(100, 18);
 			this.label6.TabIndex = 4;
-			this.label6.Text = "Файл .sql";
+			this.label6.Text = "Файл sql / zip";
 			// 
 			// TBFileSQL
 			// 
 			this.TBFileSQL.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.TBFileSQL.Location = new System.Drawing.Point(116, 41);
+			this.TBFileSQL.Location = new System.Drawing.Point(124, 54);
 			this.TBFileSQL.Margin = new System.Windows.Forms.Padding(5);
 			this.TBFileSQL.Name = "TBFileSQL";
-			this.TBFileSQL.Size = new System.Drawing.Size(224, 26);
+			this.TBFileSQL.Size = new System.Drawing.Size(220, 26);
 			this.TBFileSQL.TabIndex = 9;
 			this.TBFileSQL.Text = "Osipovichi";
 			// 
@@ -197,7 +199,7 @@
 			this.ChBDelSQL.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.ChBDelSQL.AutoSize = true;
 			this.ChBDelSQL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.ChBDelSQL.Location = new System.Drawing.Point(184, 88);
+			this.ChBDelSQL.Location = new System.Drawing.Point(188, 90);
 			this.ChBDelSQL.Margin = new System.Windows.Forms.Padding(5);
 			this.ChBDelSQL.Name = "ChBDelSQL";
 			this.ChBDelSQL.Size = new System.Drawing.Size(153, 21);
@@ -212,10 +214,10 @@
 			this.LMess.AutoEllipsis = true;
 			this.LMess.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.LMess.ForeColor = System.Drawing.Color.DarkGreen;
-			this.LMess.Location = new System.Drawing.Point(8, 184);
+			this.LMess.Location = new System.Drawing.Point(16, 182);
 			this.LMess.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
 			this.LMess.Name = "LMess";
-			this.LMess.Size = new System.Drawing.Size(352, 36);
+			this.LMess.Size = new System.Drawing.Size(336, 36);
 			this.LMess.TabIndex = 13;
 			this.LMess.Text = "***";
 			this.LMess.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,6 +245,7 @@
 			// 
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
 			this.panel1.Controls.Add(this.BOpenFolder);
 			this.panel1.Controls.Add(this.LMess);
 			this.panel1.Controls.Add(this.ChBDelSQL);
@@ -262,7 +265,7 @@
 			this.BOpenFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
 			this.BOpenFolder.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.BOpenFolder.Image = global::ReserveDB.Properties.Resources.Desktop_p6;
-			this.BOpenFolder.Location = new System.Drawing.Point(308, 0);
+			this.BOpenFolder.Location = new System.Drawing.Point(312, 13);
 			this.BOpenFolder.Name = "BOpenFolder";
 			this.BOpenFolder.Size = new System.Drawing.Size(32, 32);
 			this.BOpenFolder.TabIndex = 14;
@@ -276,7 +279,7 @@
 			this.BReserved.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.BReserved.Image = global::ReserveDB.Properties.Resources.DB_ok_p3;
 			this.BReserved.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.BReserved.Location = new System.Drawing.Point(116, 127);
+			this.BReserved.Location = new System.Drawing.Point(120, 134);
 			this.BReserved.Margin = new System.Windows.Forms.Padding(5);
 			this.BReserved.Name = "BReserved";
 			this.BReserved.Size = new System.Drawing.Size(224, 43);

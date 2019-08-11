@@ -52,6 +52,8 @@
 			this.BOpenFolder = new System.Windows.Forms.Button();
 			this.BReserved = new System.Windows.Forms.Button();
 			this.BClose = new System.Windows.Forms.Button();
+			this.ChToMem = new System.Windows.Forms.CheckBox();
+			this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
 			this.PSetups.SuspendLayout();
 			this.panel1.SuspendLayout();
 			this.SuspendLayout();
@@ -246,6 +248,7 @@
 			this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
 			this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.panel1.Controls.Add(this.ChToMem);
 			this.panel1.Controls.Add(this.BOpenFolder);
 			this.panel1.Controls.Add(this.LMess);
 			this.panel1.Controls.Add(this.ChBDelSQL);
@@ -304,6 +307,21 @@
 			this.BClose.UseVisualStyleBackColor = true;
 			this.BClose.Click += new System.EventHandler(this.Button1_Click);
 			// 
+			// ChToMem
+			// 
+			this.ChToMem.AutoSize = true;
+			this.ChToMem.Checked = true;
+			this.ChToMem.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.ChToMem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.ChToMem.Location = new System.Drawing.Point(11, 90);
+			this.ChToMem.Name = "ChToMem";
+			this.ChToMem.Size = new System.Drawing.Size(112, 21);
+			this.ChToMem.TabIndex = 15;
+			this.ChToMem.Text = "SQL -  в ОЗУ";
+			this.toolTip1.SetToolTip(this.ChToMem, "Создавать фай SQl  в ОЗУ (не на диске)");
+			this.ChToMem.UseVisualStyleBackColor = true;
+			this.ChToMem.CheckedChanged += new System.EventHandler(this.ChToMem_CheckedChanged);
+			// 
 			// FDumpDB_SQL
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -353,6 +371,8 @@
 		private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
 		private System.Windows.Forms.Panel PSetups;
 		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.CheckBox ChToMem;
+		private System.Windows.Forms.ToolTip toolTip1;
 	}
 }
 

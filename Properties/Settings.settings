@@ -17,5 +17,8 @@
     <Setting Name="iSizeX" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">390</Value>
     </Setting>
+    <Setting Name="bToMem" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
